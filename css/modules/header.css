@@ -1,27 +1,95 @@
 .header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
-
+	padding: 2rem;
 	box-shadow: 0.25rem 0.25rem;
-	background: var(--foreground);
 }
 
 .header__headline {
+	font-size: 4rem;
 	font-family: var(--headline-font);
 }
 
+/* Styling header-right */
+.header__right {
+	display: flex;
+	align-items: center;
+}
 
-/* Removes from mobile version */
+.header__navigation {
+	display: none;
+	font-family: var(--text-font);
+}
+
+.header__login-button {
+	width: 5rem;
+	padding: 0.5rem;
+	margin-right: 1rem;
+	border-radius: 0.25rem;
+	font-family: var(--text-font);
+	font-size: medium;
+}
+
+.header__login-button {
+	background: #d3a625;
+}
+
+.header__menu-burger {
+	width: 3rem;
+	margin-right: 1.8rem;
+}
+
 .header__logo {
 	display: none;
 }
 
+/* Styling for visible navigation */
+.header__navigation--visible {
+	display: block;
+	width: 100%;
+	z-index: 50;
+	position: absolute;
+	top: 8rem;
+	left: 0;
+	background: rgb(203, 203, 203);
+}
+
+.header__navigation-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5rem;
+	font-size: 1.5rem;
+	border: 1px solid rgb(38, 37, 37);
+	text-decoration: none;
+	color: #000;
+}
+
+
+/* Desktop styling */
 @media screen and (min-width:768px) {
 	.header__container {
 		display: flex;
-		
+		justify-content: space-between;
+	}
+
+	.header__navigation {
+		display: flex;
 	}
 
 	.header__logo {
-		width: 10%;
+		display: block;
+		position: absolute;
+		top: 1.1rem;
+		left: 45%;
+		width: 8rem;
 	}
+
+	.header__menu-button {
+		display: none;
+	}
+
+	/* Styling navigation menu */
 }

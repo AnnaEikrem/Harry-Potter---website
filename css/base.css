@@ -11,3 +11,11 @@ button {
 	background: none;
 }
 
+header {
+	background: var(--foreground);
+}
+
+li {
+	list-style-type: none;
+}
+
