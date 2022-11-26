@@ -1,0 +1,27 @@
+.header__container {
+	width: 100%;
+
+	box-shadow: 0.25rem 0.25rem;
+	background: var(--foreground);
+}
+
+.header__headline {
+	font-family: var(--headline-font);
+}
+
+
+/* Removes from mobile version */
+.header__logo {
+	display: none;
+}
+
+@media screen and (min-width:768px) {
+	.header__container {
+		display: flex;
+		
+	}
+
+	.header__logo {
+		width: 10%;
+	}
+}
