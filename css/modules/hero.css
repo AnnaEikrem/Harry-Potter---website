@@ -1,47 +1,67 @@
 /* Styling Hero section on index file */
-.main__hero-images {
-	display: none;
+.header__container {
+	box-shadow: 0.25rem 0.25rem;
+}
+.hero__mobile-visible {
+	display: flex;
+	position: relative;
+	opacity: 50%;
+	width: 100%;
 }
 
-.main__hero-description {
-	display: none;
+.main__carousel-description {
+	position: absolute;
+	top: 45%;
+	left: 30%;
+	width: 50%;
+	color: rgb(214, 210, 210);
 }
 
+.main__carousel-images {
+	display: none;
+}
 /* Styling desktop version */
 @media screen and (min-width: 768px) {
+	.hero__mobile-visible {
+		display: none;
+	}
+
 	.main__container {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 	}
 
-	.main__hero-section {
+	.main__carousel-section {
 		display: flex;
 		justify-content: center;
 	}
 
-	.main__hero-images {
+	.main__carousel-images {
 		position: relative;
-		top: 4.8rem;
-		width: 70%;
+		top: 4.2rem;
+		width: 75%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
-	.main__hero-image {
+	.main__carousel-image {
+		/* position: absolute; */
 		width: 100%;
-		opacity: 50%;
 		z-index: 0;
 	}
 
-	.main__hero-description {
+
+
+
+	.main__carousel-description {
 		position: absolute;
 		top: 65%;
 		display: block;
 		width: 45%;
 		z-index: 10;
-		color: #fff;
+		color: rgb(214, 210, 210);
 	}
 
 }

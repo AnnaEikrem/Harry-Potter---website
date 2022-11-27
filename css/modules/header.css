@@ -93,6 +93,11 @@
 		display: none;
 	}
 
+	.header__login-button:hover {
+		transition: 0.4s;
+		background: var(--hover-color);
+	}
+
 	/* Styling navigation menu */
 	.header__navigation {
 		display: flex;
