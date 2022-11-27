@@ -1,0 +1,61 @@
+.sortinghat__random-picker {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem
+}
+
+.sortinghat__image {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+
+.sortinghat__result {
+	width: 80%;
+	padding: 5rem;
+
+	font-size: 1.8rem;
+	font-family: var(--text-font);
+	text-align: center;
+	background: rgb(199, 199, 199);
+}
+
+.sortinghat__click-button {
+	margin: 1rem auto;
+	padding: 0.8rem;
+	border-radius: 0.5rem;
+	transition: 0.4s;
+	font-family: var(--text-font);
+	background: #d3a625;;
+}
+
+
+@media screen and (min-width: 768px) {
+	.sortinghat__random-picker {
+		padding: 7rem;
+	}
+
+
+	.sortinghat__image {
+		width: 50%;
+	}
+
+	.sortinghat__result {
+		width: 70%;
+		padding: 5rem;
+	
+		font-size: 1.8rem;
+		font-family: var(--text-font);
+		text-align: center;
+		background: rgb(199, 199, 199);
+	}
+
+
+	.sortinghat__click-button:hover {
+		cursor: pointer;
+		background: var(--hover-color);
+	}
+}
