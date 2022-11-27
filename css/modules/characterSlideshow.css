@@ -1,0 +1,84 @@
+.main__slideshow {
+	width: 100%;
+}
+
+.slideshow__section {
+	width: 100%;
+	padding: 8rem;
+}
+
+.slideshow__cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.slideshow__card {
+	margin-bottom: 5rem;
+	border-radius: 0.5rem;
+}
+
+.slideshow__card-headline {
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem;
+	border-radius:0.5rem 0.5rem 0 0;
+	font-family: var(--headline-font);
+	font-size: 3.5rem;
+	background: #d3a625;
+}
+
+.slideshow__card-image {
+	width: 100%;
+	padding: 0 2rem 2rem 2rem;
+}
+
+.gryffindor {
+	background: #740001;
+}
+
+.slytherin {
+	background: #2a623d;
+}
+
+.hufflepuff {
+	background: #ffdb00;
+}
+
+.ravenclaw {
+	background: #222f5b;
+}
+
+.grey {
+	background: rgb(119, 119, 119);
+}
+
+
+
+
+
+
+
+/* Removes elements from mobile version */
+.slideshow__button-previous, 
+.slideshow__button-next, .slideshow__dots {
+	display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+	
+
+
+
+
+
+	.slideshow__dots {
+		display: flex;
+	}
+
+	.slideshow__button-previous, 
+	.slideshow__button-next {
+	display: block;
+}
+}
