@@ -56,29 +56,102 @@
 
 
 
-
-
-
 /* Removes elements from mobile version */
 .slideshow__button-previous, 
-.slideshow__button-next, .slideshow__dots {
+.slideshow__button-next {
 	display: none;
 }
 
 
 @media screen and (min-width: 768px) {
-	
-
-
-
-
-
-	.slideshow__dots {
+	.slideshow__section {
 		display: flex;
+		justify-content: center;
+		padding: 10% 30% 20% 30%;
+	}	
+
+	.main__slideshow {
+		position: relative;
+		width: 100%;
+	}
+
+	.slideshow__cards {
+		margin-bottom: 17rem;
+	}
+
+	.slideshow__card {
+		display: none;
+		position: absolute;
+		top: 6rem;
+		left: 30%;
+		width: 40%;
+	}
+
+	.slideshow__card-image {
+		height: fit-content;
+	}
+
+	/* Class is toggled with javascript */
+	.slideshow__card--active {
+		display: block;
+	}
+
+	.slideshow__controls {
+		position: relative;
+		z-index: 10;
 	}
 
 	.slideshow__button-previous, 
 	.slideshow__button-next {
-	display: block;
-}
+		display: block;
+	}
+	
+	.slideshow__button-previous {
+		position: absolute;
+		left: -25rem;
+		width: 4rem;
+		height: 4rem;
+		transition: 0.3s;
+		transform: translateY(16rem);
+		border-radius: 0.5rem;
+	}
+
+	.slideshow__button-next {
+		position: absolute;
+		right: -25rem;
+		width: 4rem;
+		height: 4rem;
+		transition: 0.3s;
+		transform: translateY(16rem);
+		border-radius: 0.5rem;
+	}
+
+	.slideshow__button-previous:hover,
+	.slideshow__button-next:hover, .slideshow__button-dot:hover {
+		background: var(--hover-color);
+		cursor: pointer;
+	}
+
+	.slideshow__dots {
+		position: absolute;
+		bottom: -16rem;
+		z-index: 10; 
+		width: 50%;
+		height: 2rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.slideshow__button-dot {
+		width: 1.5rem;
+		height: 1.5rem;
+		background: #fff; 
+		border-radius: 50%;
+		transition: 0.4s;
+	}
+
+	.slideshow__button-dot--active {
+		background: #000;
+	} 
 }
