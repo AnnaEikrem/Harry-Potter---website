@@ -4,10 +4,11 @@
 
 
 @import './modules/header.css';
-@import './modules/hero.css';
+@import './modules/heroAutoplay.css';
 @import './modules/sortingHat.css';
 @import './modules/characterSlideshow.css';
 @import './modules/loginForm.css';
+@import './modules/signup.css';
 
 
 

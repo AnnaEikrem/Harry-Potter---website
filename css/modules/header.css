@@ -70,6 +70,11 @@
 	color: #000;
 }
 
+
+.signup__button  {
+	background: #d3a625;
+}
+
 /* Desktop styling */
 @media screen and (min-width:768px) {
 	.header__container {

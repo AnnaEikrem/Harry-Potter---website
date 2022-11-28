@@ -40,28 +40,32 @@
 	.main__carousel-images {
 		position: relative;
 		top: 4.2rem;
-		width: 75%;
+		width: 70%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
 	.main__carousel-image {
-		/* position: absolute; */
 		width: 100%;
 		z-index: 0;
+		display: none;
+
 	}
 
-
-
+	.carousel__image--visible {
+		display: block;
+	}
 
 	.main__carousel-description {
 		position: absolute;
-		top: 65%;
+		top: 70%;
+		z-index: 10;
 		display: block;
 		width: 45%;
-		z-index: 10;
+		padding: 3rem;
+		opacity: 50%;
 		color: rgb(214, 210, 210);
+		background: rgb(0, 0, 0);
 	}
-
 }

@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Log in </title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Log in </title>
 
-	<link rel="stylesheet" href="./css/main.css">
-	<script type="module" src="./js/main.js"></script>
-</head>
-<body>
-	<header class="form__header">
-		<a href="#" target="_blank">
-			<img class="header__logo" src="./assets/Hogwarts-Logo.png" alt="">
-		</a>
-
-		<div class="header__right">
-			<nav class="header__navigation">
-				<menu class="header__navigation-menu">
-					<li><a class="header__navigation-item" href="./index.html">Home</a></li>
-
-					<li><a class="header__navigation-item" href="./sortingHat.html" target="_blank">Sorting Hat</a></li>
-
-					<li><a class="header__navigation-item" href="./charactersSlideshow.html" target="_blank">The characters</a></li>
-
-					<li><a class="header__navigation-item" href="#" target="_blank">Blabla</a></li>
-				</menu>
-			</nav>
-
-			<button class="header__menu-button">
-				<img class ="form__menu-burger" src="./assets/burgerMenu.svg" alt="">
-			</button>
-		</div>
-	</header>
-	<main class="form__container">
-		<h1 class="form__headline">HARRY POTTER</h1>
-
-		<H3 class="form__underText">FANCLUB</H3>
-
-		<form class="signIn__form" action="./confirmation.html">
-
-
-
-			<button class="signIn__continue">Continue</button>
-		</form>
-
-		<h4>Not a member yet?</h4>
-		<button><a href="./signupForm.html">Sign up here</a></button>
-
-
-
-
-
-	</main>
+		<link rel="stylesheet" href="./css/main.css">
+		<script type="module" src="./js/main.js"></script>
+	</head>
 	
-</body>
+	<body>
+		<header class="form__header">
+			<a href="#" target="_blank">
+				<img class="header__logo" src="./assets/Hogwarts-Logo.png" alt="">
+			</a>
+
+			<div class="header__right">
+				<nav class="header__navigation">
+					<menu class="header__navigation-menu">
+						<li><a class="header__navigation-item" href="./index.html">Home</a></li>
+
+						<li><a class="header__navigation-item" href="./sortingHat.html" target="_blank">Sorting Hat</a></li>
+
+						<li><a class="header__navigation-item" href="./charactersSlideshow.html" target="_blank">The characters</a></li>
+
+						<li><a class="header__navigation-item" href="#" target="_blank">Blabla</a></li>
+					</menu>
+				</nav>
+
+				<button class="header__menu-button">
+					<img class ="form__menu-burger" src="./assets/burgerMenu.svg" alt="">
+				</button>
+			</div>
+		</header>
+		
+		<main class="form__container">
+			<h1 class="form__headline">HARRY POTTER</h1>
+
+			<H3 class="form__underText">FANCLUB</H3>
+
+			<form class="login__form" action="./confirmation.html">
+				<ul class="login__list">
+					<li class="login__list-item">
+						<label for="email">Email address</label>
+						<input type="text" name="email" id="email" required>
+					</li>
+
+					<li class="login__list-item">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" required>
+					</li>
+				</ul>
+
+				<button class="login__continue">Continue</button>
+			</form>
+
+			
+			<h4 class="form__underText">Not a member yet?</h4>
+			<button class="signup__button"><a href="./signupForm.html">Sign up here</a></button>
+		</main>
+
+	</body>
 </html>

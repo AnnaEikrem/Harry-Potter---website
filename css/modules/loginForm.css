@@ -1,3 +1,4 @@
+/* Styling Form header */
 .form__header {
 	background: none;
 	display: flex;
@@ -9,6 +10,8 @@
 	width: 3rem;
 }
 
+
+/* Styling Log in form */
 .form__container {
 	display: flex;
 	flex-direction: column;
@@ -31,10 +34,51 @@
 	margin: 2rem;
 }
 
+.login__form {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	padding: 5%;
+	color: #fff;
+}
+
+input {
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 0.2rem;
+}
+
+.login__list-item {
+	margin: 1rem;
+}
+
+.login__continue {
+	width: 20%;
+	margin: 0.5rem;
+	padding: 0.7rem;
+	border-radius: 0.5rem;
+	background: #d3a625;
+}
+
+.signup__button {
+	width: 20%;
+	padding: 0.7rem;
+	border-radius: 0.5rem;
+	background: #d3a625;
+}
+
 
 /* Styling dekstop version */
 @media screen and (min-width: 768px) {
 	.form__container {
 		margin: 9rem;
+	}
+
+	.login__continue:hover, 
+	.signup__button:hover {
+		cursor: pointer;
+		transition: 0.4s;
+		background: var(--hover-color);
 	}
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Log in </title>
+	<title>Sign up</title>
 
 	<link rel="stylesheet" href="./css/main.css">
 	<script type="module" src="./js/main.js"></script>
@@ -35,13 +35,66 @@
 	<main class="form__container">
 		<h1 class="form__headline">HARRY POTTER</h1>
 
-		<H3 class="form__underText">FANCLUB</H3>
+		<H3 class="form__underText">Create an account</H3>
 
-		<form class="signIn__form" action="">
+		<form class="login__form" method="post" action="./confirmation.html">
+			<ul class="signup__form">
+				<fieldset class="signup__form-top">
+					<li class="signup__form-item">
+						<label for="first-name">First name</label>
+						<input type="text" name="first-name" id="first-name" placeholder="Jane" autocomplete="on" required>
+					</li>
+
+					<li class="signup__form-item">
+						<label for="last-name">Last name</label>
+						<input type="text" name="last-name" id="last-name" placeholder="Doe" autocomplete="on" required>
+					</li>
+				</fieldset>
+
+				<fieldset class="signup__form-middle">
+					<li class="signup__form-item">
+						<label for="birth-date">Birth date</label>
+						<input type="date" name="birth-date" id="birth-date" required>
+					</li>
+					
+					<!-- Add validation on email, age (age limit?) and password -->
+					<li class="signup__form-item">
+						<label for="email">Email address</label>
+						<input type="email" name="email" id="email" pattern="" autocomplete="on" required>
+					</li>
+				</fieldset>
+
+				<fieldset class="signup__form-bottom">
+					<li class="signup__form-item">
+						<label for="gender">Gender</label>
+						<select name="gender" id="gender" required>
+							<option selected disablet>Select</option>
+							<option value="Witch">Witch</option>
+							<option value="Wizard">Wizard</option>
+							<option value="Note relevant">Not relevant</option>
+						</select>
+					</li>
+
+					<li class="signup__form-item">
+						<!-- Add terms and conditions 'file' -->
+						<div for="checkbox">I agree to the terms and conditions</div>
+
+						<label for="yes">Yes</label>
+						<input type="checkbox" name="Yes" id="yes">
+
+						<label for="no">No</label>
+						<input type="checkbox" name="No" id="no">
+					</li>
+
+					<li class="signup__form-item">
+
+					</li>
+					
+				</fieldset>
+			</ul>
 
 
-
-			<button class="signIn__continue">Sign up</button>
+			<button class="login__continue"><a href="./confirmation.html"></a>Sign me up</button>
 		</form>
 
 
