@@ -1,0 +1,38 @@
+.footer__home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	margin-top: 6rem;
+	background: var(--foreground);
+}
+
+
+.footer__social-media {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: center;
+	width: 50%;
+}
+
+.footer_aboutus {
+	display: none;
+}
+
+
+.icon__social-media {
+	width: 10%;
+}
+
+@media screen and (min-width: 768px) {
+	.footer__home {
+		display: flex;
+	}
+
+	.footer__aboutus {
+		display: flex;
+	}
+	
+}
