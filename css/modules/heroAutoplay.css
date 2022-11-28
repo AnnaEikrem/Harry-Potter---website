@@ -58,12 +58,13 @@
 	}
 
 	.main__carousel-description {
-		position: absolute;
-		top: 70%;
-		z-index: 10;
 		display: block;
-		width: 45%;
-		padding: 3rem;
+		position: absolute;
+		top: 55%;
+		left: 25%;
+		width: 50%;
+		z-index: 10;
+		padding: 6rem;
 		opacity: 50%;
 		color: rgb(214, 210, 210);
 		background: rgb(0, 0, 0);
