@@ -14,7 +14,8 @@
 }
 
 .sortinghat__result {
-	width: 80%;
+	width: 100%;
+	height: 20vh;
 	padding: 5rem;
 
 	font-size: 1.8rem;
@@ -23,13 +24,30 @@
 	background: rgb(199, 199, 199);
 }
 
+.sortinghat__results-text-container {
+	width: 70%;
+	padding: 10vh;
+	text-align: center;
+	background: white;
+}
+
+.sortinghat__results-text {
+	display: none;
+	font-family:'Courier New', Courier, monospace;
+
+}
+
+.sortinghat__results-text--visible {
+	display: block;
+}
+
 .sortinghat__click-button {
 	margin: 1rem auto;
 	padding: 0.8rem;
 	border-radius: 0.5rem;
 	transition: 0.4s;
 	font-family: var(--text-font);
-	background: #d3a625;;
+	background: #d3a625;
 }
 
 
@@ -37,7 +55,6 @@
 	.sortinghat__random-picker {
 		padding: 7rem;
 	}
-
 
 	.sortinghat__image {
 		width: 50%;
@@ -52,7 +69,6 @@
 		text-align: center;
 		background: rgb(199, 199, 199);
 	}
-
 
 	.sortinghat__click-button:hover {
 		cursor: pointer;

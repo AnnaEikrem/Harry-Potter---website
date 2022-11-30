@@ -25,6 +25,14 @@ export default function heroAutoplay() {
 			image.classList.remove('carousel__image--visible');
 		}
 
+		// setTimeout(() => {
+
+		// }, 500)
+
+		// setTimeout(() => {
+
+		// }, 3500)
+
 		carouselImages[currentIndex].classList.add('carousel__image--visible');
 	}
 

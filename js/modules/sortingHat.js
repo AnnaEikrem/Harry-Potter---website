@@ -2,13 +2,15 @@ export default function Sortinghat() {
 	const sortinghat = document.querySelector('.sortinghat__random-picker');
 	const outputField = document.querySelector('.sortinghat__result');
 	const clickButton = document.querySelector('.sortinghat__click-button');
+	const houseResults = document.querySelectorAll('.sortinghat__results-text');
 	const houseArray = [
 		'Gryffindor',
 		'Hufflepuff',
 		'Ravenclaw',
 		'Slytherin'
 	];
-	let outputMessage;
+
+	let selectedHouse = null;
 
 	if (sortinghat) {
 		clickButton.addEventListener('click', handleClickButton);
@@ -21,14 +23,26 @@ export default function Sortinghat() {
  
 	function getHouseResult() {
 		const randomIndex = Math.floor(Math.random() * houseArray.length);
-		outputMessage = houseArray[randomIndex];
-		console.log(outputMessage);
+		const randomlyChosenHouse = houseArray[randomIndex];
 
-		return outputMessage;
+		//????????
+		if (randomlyChosenHouse === selectedHouse) {
+			getHouseResult();
+		}
+
+		selectedHouse = randomlyChosenHouse;
 	}
 
 	function renderHTML() {
-		outputField.innerHTML = ` ${outputMessage}`;
+		for (const result of houseResults) {
+			result.classList.remove('sortinghat__results-text--visible');
+
+			if (result.dataset.house === selectedHouse) {
+				result.classList.add('sortinghat__results-text--visible');
+			}
+		}
+
+		outputField.innerText = selectedHouse;
 	}
 
 }
