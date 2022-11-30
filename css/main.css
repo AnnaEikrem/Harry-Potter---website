@@ -5,6 +5,7 @@
 
 @import './modules/header.css';
 @import './modules/heroAutoplay.css';
+@import './modules/moviesGrid.css';
 @import './modules/sortingHat.css';
 @import './modules/characterSlideshow.css';
 @import './modules/loginForm.css';
