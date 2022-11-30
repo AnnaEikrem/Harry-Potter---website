@@ -6,7 +6,7 @@ import characterSlideshow from './modules/characterSlideshow.js';
 import Cursor from './modules/cursor.js';
 	
 Header();
-heroAutoplay();
+// heroAutoplay();
 Sortinghat();
 characterSlideshow();
 

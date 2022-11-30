@@ -33,34 +33,41 @@
 	}
 
 	.main__carousel-section {
+		width: 100%;
+		height: 90vh;
 		display: flex;
 		justify-content: center;
 	}
 
 	.main__carousel-images {
 		position: relative;
-		top: 4.2rem;
-		width: 70%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		top: 4rem;
+		width: 80%;
+		height: 100%;
 	}
 
 	.main__carousel-image {
-		width: 100%;
+		/* width: 100%; */
+		/* display: none; */
+		height: 100%;
 		z-index: 0;
-		display: none;
-
+		width: 0;
+		opacity: 0;
 	}
 
-	.carousel__image--visible {
-		display: block;
+	.main__carousel-image--visible {
+		width: 100%;
+		height: 100%;
+		opacity: 1;
 	}
 
 	.main__carousel-description {
 		display: block;
 		position: absolute;
-		top: 55%;
+		top: 50%;
 		left: 25%;
 		width: 50%;
 		z-index: 10;

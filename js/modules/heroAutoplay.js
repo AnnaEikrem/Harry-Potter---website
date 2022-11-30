@@ -22,18 +22,10 @@ export default function heroAutoplay() {
 
 	function renderCarouselHTML() {
 		for (const image of carouselImages) {
-			image.classList.remove('carousel__image--visible');
+			image.classList.remove('main__carousel-image--visible');
 		}
-
-		// setTimeout(() => {
-
-		// }, 500)
-
-		// setTimeout(() => {
-
-		// }, 3500)
-
-		carouselImages[currentIndex].classList.add('carousel__image--visible');
+		
+		carouselImages[currentIndex].classList.add('main__carousel-image--visible');
 	}
 
 }

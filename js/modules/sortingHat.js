@@ -25,7 +25,7 @@ export default function Sortinghat() {
 		const randomIndex = Math.floor(Math.random() * houseArray.length);
 		const randomlyChosenHouse = houseArray[randomIndex];
 
-		//????????
+		/* Suppose to prevent the same 'house' from being selected twice in a row */
 		if (randomlyChosenHouse === selectedHouse) {
 			getHouseResult();
 		}
