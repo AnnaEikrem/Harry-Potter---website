@@ -1,8 +1,6 @@
 export default function Sortinghat() {
-	// Adds audio to site
 	const audio = new Audio;
 	audio.src = '/assets/audio/harryPotter-theme.mp3'
-
 
 	const sortinghat = document.querySelector('.sortinghat__random-picker');
 	const outputField = document.querySelector('.sortinghat__result');
@@ -23,14 +21,8 @@ export default function Sortinghat() {
 
 	function handleClickButton(event) {
 		getHouseResult();
-		// Adds audio
 		playAudio();
 		renderHTML();
-	}
-
-	// Adds audio
-	function playAudio() {
-		audio.play();
 	}
  
 	function getHouseResult() {
@@ -43,6 +35,11 @@ export default function Sortinghat() {
 		}
 
 		selectedHouse = randomlyChosenHouse;
+	}
+
+	// Adds audio
+	function playAudio() {
+		audio.play();
 	}
 
 	function renderHTML() {

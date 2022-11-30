@@ -4,7 +4,7 @@ export default function heroAutoplay() {
 	const carouselImages = document.querySelectorAll('.main__carousel-image');
 
 	if (carousel) {
-		setInterval(autoplayCarousel, 4000);
+		setInterval(autoplayCarousel, 5000);
 	}
 
 	function autoplayCarousel() {
