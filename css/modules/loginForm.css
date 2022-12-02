@@ -10,7 +10,6 @@
 	width: 3rem;
 }
 
-
 /* Styling Log in form */
 .form__container {
 	display: flex;
@@ -28,8 +27,7 @@
 }
 
 .form__underText {
-	font-family: var(--text-font);
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: rgb(169,169,169);
 	margin: 2rem;
 }
