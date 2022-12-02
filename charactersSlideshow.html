@@ -1,148 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The characters</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The characters</title>
 
-	<link rel="stylesheet" href="./css/main.css">
-	<script type="module" src="./js/main.js"></script>
-</head>
-<body>
-	<header class="header__container">
+		<link rel="stylesheet" href="./css/main.css">
+		<script type="module" src="./js/main.js"></script>
+	</head>
+	<body>
+		<header class="header__container">
+			<h1 class="header__headline">The characters</h1>
+			
+			<img class="header__logo" src="./assets/Hogwarts-Logo.png" alt="Logo from Hogwarts school from the Harry Potter universe.">
 
-		<h1 class="header__headline">The characters</h1>
+			<div class="header__right">
+				<nav class="header__navigation">
+					<menu class="header__navigation-menu">
+						<li>
+							<a class="header__navigation-item" href="./index.html">Home</a>
+						</li>
 
-		<a href="#" target="_blank">
-			<img class="header__logo" src="./assets/Hogwarts-Logo.png" alt="">
-		</a>
+						<li>
+							<a class="header__navigation-item" href="./sortingHat.html" target="_blank">Sorting Hat</a>
+						</li>
 
+						<li>
+							<a class="header__navigation-item" href="./charactersSlideshow.html" target="_blank">The characters</a>
+						</li>
+					</menu>
+				</nav>
 
-		<div class="header__right">
-			<nav class="header__navigation">
-				<menu class="header__navigation-menu">
-					<li><a class="header__navigation-item" href="./index.html">Home</a></li>
-
-					<li><a class="header__navigation-item" href="./sortingHat.html" target="_blank">Sorting Hat</a></li>
-
-					<li><a class="header__navigation-item" href="./charactersSlideshow.html" target="_blank">The characters</a></li>
-				</menu>
-			</nav>
-
-			<button class="header__menu-button">
-				<img class ="header__menu-burger" src="./assets/burgerMenu.svg" alt="">
-			</button>
-
-			<button class="header__login-button">
-				<a href="./loginForm.html" target="_blank">Log in</a>
-			</button>
-		</div>
-	</header>
-
-	<main class="main__slideshow">
-		<section class="slideshow__section"> 
-			<div class="slideshow__controls">
-				<button class="slideshow__button-previous">
-					<img class="button__previous-image" src="./assets/previous-arrow.svg" alt="">
+				<button class="header__menu-button">
+					<img class ="header__menu-burger" src="./assets/burgerMenu.svg" alt="Burger-icon that navigates to menu.">
 				</button>
 
-				<button class="slideshow__button-next">
-					<img class="button__next-image" src="./assets/next-arrow.svg" alt="">
+				<button class="header__login-button">
+					<a href="./loginForm.html" target="_blank">
+						Log in
+					</a>
 				</button>
 			</div>
+		</header>
 
-			<div class="slideshow__cards">
-				<figure class="slideshow__card gryffindor slideshow__card--active">
-					<h3 class="slideshow__card-headline">Harry Potter</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/harry_Potter.jpeg" alt="">
-				</figure>
+		<main class="main__slideshow">
+			<section class="slideshow__section"> 
+				<div class="slideshow__controls">
+					<button class="slideshow__button-previous">
+						<img class="button__previous-image" src="./assets/previous-arrow.svg" alt="Image of arrow pointing left.">
+					</button>
 
-				<figure class="slideshow__card gryffindor">
-					<h3 class="slideshow__card-headline">Hermione Granger</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/hermione_granger.jpeg" alt="">
-				</figure>
+					<button class="slideshow__button-next">
+						<img class="button__next-image" src="./assets/next-arrow.svg" alt="Image of arrow pointing right.">
+					</button>
+				</div>
 
-				<figure class="slideshow__card ravenclaw">
-					<h3 class="slideshow__card-headline">Cho Chang</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/cho_chang.webp" alt="">
-				</figure>
+				<div class="slideshow__cards">
+					<figure class="slideshow__card gryffindor slideshow__card--active">
+						<h3 class="slideshow__card-headline">
+							Harry Potter
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/harry_Potter.jpeg" alt="Young boy with dark hair, round glasses and yellow and red scarf.">
+					</figure>
+
+					<figure class="slideshow__card gryffindor">
+						<h3 class="slideshow__card-headline">
+							Hermione Granger
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/hermione_granger.jpeg" alt="Young girl with brown wavy hair. Wearing redGryffindor symbol and black cloak.">
+					</figure>
+
+					<figure class="slideshow__card ravenclaw">
+						<h3 class="slideshow__card-headline">
+							Cho Chang
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/cho_chang.webp" alt="Young girl with black long hair. In blue Ravenclaw uniform and holding a brown wand.">
+					</figure>
 
 
-				<figure class="slideshow__card gryffindor">
-					<h3 class="slideshow__card-headline">Ronald Weasley</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/ronald_weasley.jpg" alt="">
-				</figure>
+					<figure class="slideshow__card gryffindor">
+						<h3 class="slideshow__card-headline">
+							Ronald Weasley
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/ronald_weasley.jpg" alt="Boy with orange hair, wearing red Griffyndor uniform and grey cloak.">
+					</figure>
 
-				<figure class="slideshow__card ravenclaw">
-					<h3 class="slideshow__card-headline">Moaney Murtle</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/myrtle.jpeg" alt="">
-				</figure>
+					<figure class="slideshow__card ravenclaw">
+						<h3 class="slideshow__card-headline">
+							Moaney Murtle
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/myrtle.jpeg" alt="Girl with dark hair and braid. Round glasses in blue Ravenclaw uniform.">
+					</figure>
 
-				<figure class="slideshow__card slytherin">
-					<h3 class="slideshow__card-headline">Draco Malfoy</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/draco_malfoy.jpeg" alt="">
-				</figure>
+					<figure class="slideshow__card slytherin">
+						<h3 class="slideshow__card-headline">
+							Draco Malfoy
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/draco_malfoy.jpeg" alt="Young boy with short blond hair. In green slytherin uniform, holding a wand.">
+					</figure>
 
-				<figure class="slideshow__card slytherin">
-					<h3 class="slideshow__card-headline">Crabbe</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/crabbe.jpeg" alt="">
-				</figure>
+					<figure class="slideshow__card slytherin">
+						<h3 class="slideshow__card-headline">
+							Crabbe
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/crabbe.jpeg" alt="Boy with dark hair, wearing Slytherin uniform.">
+					</figure>
 
-				<figure class="slideshow__card hufflepuff">
-					<h3 class="slideshow__card-headline">Cedric Diggory</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/Cedric_diggory.jpeg" alt="">
-				</figure>
+					<figure class="slideshow__card hufflepuff">
+						<h3 class="slideshow__card-headline">
+							Cedric Diggory
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/Cedric_diggory.jpeg" alt="Boy with short wavy brown hair, wearing yellow Hufflepuff uniform.">
+					</figure>
 
-				<figure class="slideshow__card ravenclaw">
-					<h3 class="slideshow__card-headline">Luna Lovegood</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/luna_lovegood.jpeg" alt="">
-				</figure>
+					<figure class="slideshow__card ravenclaw">
+						<h3 class="slideshow__card-headline">
+							Luna Lovegood
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/luna_lovegood.jpeg" alt="Girl with long blond hair. Wearing glasses with wings and holding a magazin named 'Quibbler'.">
+					</figure>
 
-				<figure class="slideshow__card gryffindor">
-					<h3 class="slideshow__card-headline">Neville Longbottom</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/Neville_Longbottom.jpeg" alt="">
-				</figure>
+					<figure class="slideshow__card gryffindor">
+						<h3 class="slideshow__card-headline">
+							Neville Longbottom
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/Neville_Longbottom.jpeg" alt="Boy with dark short hair. Wearing Gryffindor uniform and holding a brown wand.">
+					</figure>
 
-				<figure class="slideshow__card grey">
-					<h3 class="slideshow__card-headline">Viktor Krum</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/viktor_krum.jpeg" alt="">
-				</figure>
+					<figure class="slideshow__card grey">
+						<h3 class="slideshow__card-headline">
+							Viktor Krum
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/viktor_krum.jpeg" alt="Young man wearing a red cloak and glasses.">
+					</figure>
 
-				<figure class="slideshow__card gryffindor">
-					<h3 class="slideshow__card-headline">Ginny Weasley</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/Ginny_Weasley.webp" alt="">
-				</figure>
+					<figure class="slideshow__card gryffindor">
+						<h3 class="slideshow__card-headline">
+							Ginny Weasley
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/Ginny_Weasley.webp" alt="Girl with orange hair, wearing a dress and holding a wand.">
+					</figure>
 
-				<figure class="slideshow__card slytherin">
-					<h3 class="slideshow__card-headline">Severus Snape</h3>
-					<img class="slideshow__card-image" src="./assets/slideshow_images/Severus_Snape.jpeg" alt="">
-				</figure>
+					<figure class="slideshow__card slytherin">
+						<h3 class="slideshow__card-headline">
+							Severus Snape
+						</h3>
+						<img class="slideshow__card-image" src="./assets/slideshow_images/Severus_Snape.jpeg" alt="Man with dark hair, wearing dark clothes and cloak.">
+					</figure>
+				</div>
+
+
+				<!-- 13 dots for 13 cards -->
+				<div class="slideshow__dots">
+					<button class="slideshow__button-dot slideshow__button-dot--active"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+					<button class="slideshow__button-dot"></button>
+				</div>
+			</section>
+		</main>	
+
+		<footer class="footer__home">
+			<div class="footer__aboutus">
+				<h4 class="footer__aboutus-headline">About us</h4>
+
+				<div class="footer__aboutus-text">
+					A site dedicated to giving a taste of J.K Rowlings fantasy world.
+				</div>
 			</div>
 
+			<div class="footer__social-media">
+				<h4 class="footer__social-media-headline">
+					Send us an owl:
+				</h4>
 
-			<!-- 13 dots for 13 cards -->
-			<div class="slideshow__dots">
-				<button class="slideshow__button-dot slideshow__button-dot--active"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
-				<button class="slideshow__button-dot"></button>
+				<div class="footer__social-media-icons">
+					<a class="footer__social-media-icon" href="#">
+						<img class="footer__social-media-image" src="./assets/facebook.svg" alt="Round facebook icon.">
+					</a> 
+
+					<a class="footer__social-media-icon" href="#">
+						<img class="footer__social-media-image" src="./assets/instagram.svg" alt="Round instagram icon.">
+					</a> 
+
+					<a class="footer__social-media-icon" href="#">
+						<img class="footer__social-media-image" src="./assets/twitter.svg" alt="Round twitter icon.">
+					</a> 
+				</div>
 			</div>
-
-
-		</section>
-	</main>
-
-
-
-	
-</body>
+		</footer>
+	</body>
 </html>

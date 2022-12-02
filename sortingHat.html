@@ -1,83 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sortinghat</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Sortinghat</title>
 
-	<link rel="stylesheet" href="./css/main.css">
-	<script type="module" src="./js/main.js"></script>
-</head>
+		<link rel="stylesheet" href="./css/main.css">
+		<script type="module" src="./js/main.js"></script>
+	</head>
 
-<body>
-	<header class="header__container">
+	<body>
+		<header class="header__container">
 
-		<h1 class="header__headline">Sortinghat</h1>
+			<h1 class="header__headline">Sortinghat</h1>
 
-		<a href="#" target="_blank">
-			<img class="header__logo" src="./assets/Hogwarts-Logo.png" alt="">
-		</a>
+			<img class="header__logo" src="./assets/Hogwarts-Logo.png" alt="Logo from Hogwarts school from the Harry Potter universe.">
 
+			<div class="header__right">
+				<nav class="header__navigation">
+					<menu class="header__navigation-menu">
+						<li>
+							<a class="header__navigation-item" href="./index.html">Home</a>
+						</li>
 
-		<div class="header__right">
-			<nav class="header__navigation">
-				<menu class="header__navigation-menu">
-					<li><a class="header__navigation-item" href="./index.html">Home</a></li>
+						<li>
+							<a class="header__navigation-item" href="./sortingHat.html" target="_blank">Sorting Hat</a>
+						</li>
 
-					<li><a class="header__navigation-item" href="./sortingHat.html" target="_blank">Sorting Hat</a></li>
+						<li>
+							<a class="header__navigation-item" href="./charactersSlideshow.html" target="_blank">The characters</a>
+						</li>
+					</menu>
+				</nav>
 
-					<li><a class="header__navigation-item" href="./charactersSlideshow.html" target="_blank">The characters</a></li>
-				</menu>
-			</nav>
+				<button class="header__menu-button">
+					<img class ="header__menu-burger" src="./assets/burgerMenu.svg" alt="Burger-icon that navigates to menu.">
+				</button>
 
-			<button class="header__menu-button">
-				<img class ="header__menu-burger" src="./assets/burgerMenu.svg" alt="">
-			</button>
+				<button class="header__login-button">
+					<a href="./loginForm.html" target="_blank">
+						Log in
+					</a>
+				</button>
+			</div>
+		</header>
 
-			<button class="header__login-button">
-				<a href="./loginForm.html" target="_blank">Log in</a>
-			</button>
-		</div>
-	</header>
+		<main class="main__sortinghat">
+			<section class="sortinghat__random-picker">
+				<img class="sortinghat__image" src="./assets/sorting_hat.png" alt="Picture of old, dusty hat with face on it.">
 
-	<main class="main__sortinghat">
-		<section class="sortinghat__random-picker">
-			<img class="sortinghat__image" src="./assets/sorting_hat.png" alt="">
+				<!--Shows result of chosen random-house -->
+				<div class="sortinghat__result">
+					
+				</div>
 
-			<div class="sortinghat__result">
-				
+				<!-- When clicked: Random house will show, and audio file will start -->
+				<button class="sortinghat__click-button">
+					Find your house
+				</button>
+
+				<!-- Results field: shows the description related to the house you get -->
+				<div class="sortinghat__results-text-container">
+					<article class="sortinghat__results-text" data-house="Gryffindor">
+						<h4 class="sortinghat__result-headline">
+							Congratulations
+						</h4>
+						
+						You have been sorted into the boldest of all the houses, Gryffindor! Founded by Godric Gryffindor, this house is considered the bravest and boldest. You tend to do what seems fair, although you sometimes act without thinking first, which may leave you in trouble in the future. You will do almost anything for your friend and your house often gets along best with other Gryffindors or Hufflepuff's.
+					</article>
+
+					<article class="sortinghat__results-text" data-house="Slytherin">
+						<h4 class="sortinghat__result-headline">
+							Congratulations
+						</h4>
+						
+						You are in Slytherin, the most ambitious house of all! Founded by Salazar Slytherin, this house chose to teach the most cunning. Slytherins are known to be the most cunning and ambitious and the house has produced the most Dark Wizards. Slytherin's are determined and aspire to reach their goal and beat others and may have a reputation of being insensitive. Like Gryffindor, you are also  brave but tend to be more careful of yourself than saving others. Your house gets along best with each other and gets together least with Gryffindors. 
+					</article>
+
+					<article class="sortinghat__results-text" data-house="Ravenclaw">
+						<h4 class="sortinghat__result-headline">
+							Congratulations
+						</h4>
+
+						You are in Ravenclaw! The house founded by Rowena Ravenclaw, treasures those who learn and have the most knowledgeable minds. Ravenclaws are the cleverest and wisest of them all! Just like them, you are determined to do well and be known as the most brilliant of them all. Although, we assume that you may be known to backstab others to do well on tests and succeed with your goals and ambitions. Ravenclaws are sometimes remembered as eccentric. However, Ravenclaws treasure these oddballs above ordinary people.
+					</article>
+
+					<article class="sortinghat__results-text" data-house="Hufflepuff">
+						<h4 class="sortinghat__result-headline">
+							Congratulations
+						</h4>
+
+						You belong to the kindest of them all,Hufflepuff! The house founded by Helga Hufflepuff, treasured the honest and kind. They are known to get along with most of the houses due to their kindness. Hufflepuffs are known to be loyal and helpful. Although you may have a reputation amongst the other houses as not being the sharpest tool in the shed, this is mostly untrue. Hufflepuff's don't show off. Being more modest, Hufflepuff have the least amount of famous wizards.
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer__home">
+			<div class="footer__aboutus">
+				<h4 class="footer__aboutus-headline">About us</h4>
+
+				<div class="footer__aboutus-text">
+					A site dedicated to giving a taste of J.K Rowlings fantasy world.
+				</div>
 			</div>
 
-			<!-- Javascript: on click the audio file will start -->
-			<button class="sortinghat__click-button">Find your house and "LISTEN"</button>
+			<div class="footer__social-media">
+				<h4 class="footer__social-media-headline">
+					Send us an owl:
+				</h4>
 
-			<!-- Results field: to show the text related to the house you get -->
-			<div class="sortinghat__results-text-container">
-				<article class="sortinghat__results-text" data-house="Gryffindor">
-					Congratulations! <br>
-					
-					You have been sorted into the boldest of all the houses, Gryffindor! Founded by Godric Gryffindor, this house is considered the bravest and boldest. You tend to do what seems fair, although you sometimes act without thinking first, which may leave you in trouble in the future. You will do almost anything for your friend and your house often gets along best with other Gryffindors or Hufflepuff's.
-				</article>
+				<div class="footer__social-media-icons">
+					<a class="footer__social-media-icon" href="#">
+						<img class="footer__social-media-image" src="./assets/facebook.svg" alt="Round facebook icon.">
+					</a> 
 
-				<article class="sortinghat__results-text" data-house="Slytherin">
-					Congratulations! <br>
-					
-					You are in Slytherin, the most ambitious house of all! Founded by Salazar Slytherin, this house chose to teach the most cunning. Slytherins are known to be the most cunning and ambitious and the house has produced the most Dark Wizards. Slytherin's are determined and aspire to reach their goal and beat others and may have a reputation of being insensitive. Like Gryffindor, you are also  brave but tend to be more careful of yourself than saving others. Your house gets along best with each other and gets together least with Gryffindors. 
-				</article>
+					<a class="footer__social-media-icon" href="#">
+						<img class="footer__social-media-image" src="./assets/instagram.svg" alt="Round instagram icon.">
+					</a> 
 
-				<article class="sortinghat__results-text" data-house="Ravenclaw">
-					Congratulations! <br>
-
-					You are in Ravenclaw! The house founded by Rowena Ravenclaw, treasures those who learn and have the most knowledgeable minds. Ravenclaws are the cleverest and wisest of them all! Just like them, you are determined to do well and be known as the most brilliant of them all. Although, we assume that you may be known to backstab others to do well on tests and succeed with your goals and ambitions. Ravenclaws are sometimes remembered as eccentric. However, Ravenclaws treasure these oddballs above ordinary people.
-				</article>
-
-				<article class="sortinghat__results-text" data-house="Hufflepuff">
-					Congratulations! <br> 
-
-					You belong to the kindest of them all,Hufflepuff! The house founded by Helga Hufflepuff, treasured the honest and kind. They are known to get along with most of the houses due to their kindness. Hufflepuffs are known to be loyal and helpful. Although you may have a reputation amongst the other houses as not being the sharpest tool in the shed, this is mostly untrue. Hufflepuff's don't show off. Being more modest, Hufflepuff have the least amount of famous wizards.
-				</article>
+					<a class="footer__social-media-icon" href="#">
+						<img class="footer__social-media-image" src="./assets/twitter.svg" alt="Round twitter icon.">
+					</a> 
+				</div>
 			</div>
-		</section>
-	</main>
-</body>
+		</footer>
+	</body>
 </html>

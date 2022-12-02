@@ -1,106 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sign up</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sign up</title>
 
-	<link rel="stylesheet" href="./css/main.css">
-	<script type="module" src="./js/main.js"></script>
-</head>
-<body>
-	<header class="form__header">
-		<a href="#" target="_blank">
-			<img class="header__logo" src="./assets/Hogwarts-Logo.png" alt="">
-		</a>
+		<link rel="stylesheet" href="./css/main.css">
+		<script type="module" src="./js/main.js"></script>
+	</head>
+	<body>
+		<header class="form__header">
+			<img class="header__logo" src="./assets/Hogwarts-Logo.png" alt="Logo from Hogwarts school from the Harry Potter universe.">
 
-		<div class="header__right">
-			<nav class="header__navigation">
-				<menu class="header__navigation-menu">
-					<li><a class="header__navigation-item" href="./index.html">Home</a></li>
+			<div class="header__right">
+				<nav class="header__navigation">
+					<menu class="header__navigation-menu">
+						<li>
+							<a class="header__navigation-item" href="./index.html">Home</a>
+						</li>
 
-					<li><a class="header__navigation-item" href="./sortingHat.html" target="_blank">Sorting Hat</a></li>
+						<li>
+							<a class="header__navigation-item" href="./sortingHat.html" target="_blank">Sorting Hat</a>
+						</li>
 
-					<li><a class="header__navigation-item" href="./charactersSlideshow.html" target="_blank">The characters</a></li>
+						<li>
+							<a class="header__navigation-item" href="./charactersSlideshow.html" target="_blank">The characters</a>
+						</li>
+					</menu>
+				</nav>
 
-					<li><a class="header__navigation-item" href="#" target="_blank">Blabla</a></li>
-				</menu>
-			</nav>
+				<button class="header__menu-button">
+					<img class ="form__menu-burger" src="./assets/burgerMenu.svg" alt="Burger-icon that navigates to menu.">
+				</button>
+			</div>
+		</header>
 
-			<button class="header__menu-button">
-				<img class ="form__menu-burger" src="./assets/burgerMenu.svg" alt="">
-			</button>
-		</div>
-	</header>
-	<main class="form__container">
-		<h1 class="form__headline">HARRY POTTER</h1>
+		<main class="form__container">
+			<h1 class="form__headline">HARRY POTTER</h1>
 
-		<H3 class="form__underText">Create an account</H3>
+			<H3 class="form__underText">Create an account</H3>
 
-		<form class="login__form" method="post" action="./confirmation.html">
-			<ul class="signup__form">
-				<fieldset class="signup__form-top">
-					<li class="signup__form-item">
-						<label for="first-name">First name</label>
-						<input type="text" name="first-name" id="first-name" placeholder="Jane" autocomplete="on" required>
-					</li>
+			<form class="login__form" method="post" action="./confirmation.html">
+				<ul class="signup__form">
+					<fieldset class="signup__form-top">
+						<li class="signup__form-item">
+							<label for="first-name">First name</label>
+							<input type="text" name="first-name" id="first-name" placeholder="Jane" autocomplete="on" required>
+						</li>
 
-					<li class="signup__form-item">
-						<label for="last-name">Last name</label>
-						<input type="text" name="last-name" id="last-name" placeholder="Doe" autocomplete="on" required>
-					</li>
-				</fieldset>
+						<li class="signup__form-item">
+							<label for="last-name">Last name</label>
+							<input type="text" name="last-name" id="last-name" placeholder="Doe" autocomplete="on" required>
+						</li>
+					</fieldset>
 
-				<fieldset class="signup__form-middle">
-					<li class="signup__form-item">
-						<label for="birth-date">Birth date</label>
-						<input type="date" name="birth-date" id="birth-date" required>
-					</li>
-					
-					<!-- Add validation on email, age (age limit?) and password -->
-					<li class="signup__form-item">
-						<label for="email">Email address</label>
-						<input type="email" name="email" id="email" autocomplete="on" required>
-					</li>
-				</fieldset>
+					<fieldset class="signup__form-middle">
+						<li class="signup__form-item">
+							<label for="birth-date">Birth date</label>
+							<input type="date" name="birth-date" id="birth-date" required>
+						</li>
+						
+						<li class="signup__form-item">
+							<label for="email">Email address</label>
+							<input type="email" name="email" id="email" autocomplete="on" required>
+						</li>
+					</fieldset>
 
-				<fieldset class="signup__form-bottom">
-					<li class="signup__form-item">
-						<label for="gender">Gender</label>
-						<select name="gender" id="gender" required>
-							<option selected disablet>Select</option>
-							<option value="Witch">Witch</option>
-							<option value="Wizard">Wizard</option>
-							<option value="Note relevant">Not relevant</option>
-						</select>
-					</li>
+					<fieldset class="signup__form-bottom">
+						<li class="signup__form-item">
+							<label for="gender">Gender</label>
+							<select name="gender" id="gender" required>
+								<option selected disablet>Select</option>
 
-					<li class="signup__form-item">
-						<!-- Add terms and conditions 'file' -->
-						<div for="checkbox">I agree to the terms and conditions</div>
+								<option value="Witch">Witch</option>
 
-						<label for="yes">Yes</label>
-						<input type="checkbox" name="Yes" id="yes">
+								<option value="Wizard">Wizard</option>
 
-						<label for="no">No</label>
-						<input type="checkbox" name="No" id="no">
-					</li>
+								<option value="Note relevant">Not relevant</option>
+							</select>
+						</li>
 
-					<li class="signup__form-item">
+						<li class="signup__form-item">
+							<div for="checkbox">I agree to the terms and conditions</div>
 
-					</li>
-					
-				</fieldset>
-			</ul>
+							<label for="yes">Yes</label>
+							<input type="checkbox" name="Yes" id="yes">
 
+							<label for="no">No</label>
+							<input type="checkbox" name="No" id="no">
+						</li>
+					</fieldset>
+				</ul>
 
-			<button class="login__continue"><a href="./confirmation.html"></a>Sign me up</button>
-		</form>
+				<button class="login__continue">
+					<a href="./confirmation.html">
 
-
-
-
-	</main>
-	
-</body>
+					</a>Sign me up</button>
+			</form>
+		</main>
+	</body>
 </html>

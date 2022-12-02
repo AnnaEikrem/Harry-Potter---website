@@ -1,9 +1,9 @@
 export default function heroAutoplay() {
 	let currentIndex = 0;
-	const carousel = document.querySelector('.main__hero-images')
-	const carouselImages = document.querySelectorAll('.main__hero-image');
+	const heroCarousel = document.querySelector('.main__hero-images')
+	const heroImages = document.querySelectorAll('.main__hero-image');
 
-	if (carousel) {
+	if (heroCarousel) {
 		setInterval(autoplayCarousel, 5000);
 	}
 
@@ -13,7 +13,7 @@ export default function heroAutoplay() {
 	}
 
 	function increaseCarouselSlideIndex() {
-		if (currentIndex < carouselImages.length - 1)  {
+		if (currentIndex < heroImages.length - 1)  {
 			currentIndex += 1;
 		} else {
 			currentIndex = 0;
@@ -21,11 +21,11 @@ export default function heroAutoplay() {
 	}
 
 	function renderCarouselHTML() {
-		for (const image of carouselImages) {
+		for (const image of heroImages) {
 			image.classList.remove('main__hero-image--visible');
 		}
 		
-		carouselImages[currentIndex].classList.add('main__hero-image--visible');
+		heroImages[currentIndex].classList.add('main__hero-image--visible');
 	}
 
 }
