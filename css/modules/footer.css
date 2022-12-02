@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	padding: 1rem;
+	padding: 0.5rem;
 	background: var(--foreground);
 }
 
@@ -12,6 +12,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 0 auto;
+	width: 30%;
 }
 
 .footer__social-media-icons {
@@ -19,8 +20,10 @@
 	justify-content: space-around;
 }
 
-.footer__social-media-text {
-	margin: 0.5rem;
+.footer__social-media-headline {
+	text-align: center;
+	margin: 0.8rem;
+	font-family: var(--text-font);
 }
 
 .footer__social-media-image {
@@ -35,12 +38,13 @@
 	.footer__home {
 		display: flex;
 		flex-direction: row;
-		/* justify-content: center; */
 	}
 
 	.footer__aboutus {
-		padding: 1%;
 		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
 		width: 50%;
 	}
 
@@ -49,6 +53,11 @@
 		flex-direction: column;
 		justify-content: left;
 		width: 50%;
+	}
+
+	.footer__aboutus-headline {
+		margin: 0.8rem;
+		font-family: var(--text-font);
 	}
 	
 }

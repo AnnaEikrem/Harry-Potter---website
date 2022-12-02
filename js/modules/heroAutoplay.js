@@ -1,7 +1,7 @@
 export default function heroAutoplay() {
 	let currentIndex = 0;
-	const carousel = document.querySelector('.main__carousel-images')
-	const carouselImages = document.querySelectorAll('.main__carousel-image');
+	const carousel = document.querySelector('.main__hero-images')
+	const carouselImages = document.querySelectorAll('.main__hero-image');
 
 	if (carousel) {
 		setInterval(autoplayCarousel, 5000);
@@ -22,10 +22,10 @@ export default function heroAutoplay() {
 
 	function renderCarouselHTML() {
 		for (const image of carouselImages) {
-			image.classList.remove('main__carousel-image--visible');
+			image.classList.remove('main__hero-image--visible');
 		}
 		
-		carouselImages[currentIndex].classList.add('main__carousel-image--visible');
+		carouselImages[currentIndex].classList.add('main__hero-image--visible');
 	}
 
 }
