@@ -5,8 +5,9 @@ fieldset {
 .signup__form {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	background: green;
 }
 
 .signup__form-item {

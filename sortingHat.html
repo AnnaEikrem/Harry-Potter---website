@@ -47,17 +47,22 @@
 
 		<main class="main__sortinghat">
 			<section class="sortinghat__random-picker">
-				<img class="sortinghat__image" src="./assets/sorting_hat.png" alt="Picture of old, dusty hat with face on it.">
+
+				<!-- When clicked: Random house will show, and audio file will start -->
+				<div class="sortinghat__click">
+					<div class="sortinghat__click-text">
+						Click the Sorting hat
+					</div>
+
+					<button class="sortinghat__click-button">
+						<img class="sortinghat__image" src="./assets/sorting_hat.png" alt="Picture of old, dusty hat with face on it.">
+					</button>
+				</div>
 
 				<!--Shows result of chosen random-house -->
 				<div class="sortinghat__result">
 					
 				</div>
-
-				<!-- When clicked: Random house will show, and audio file will start -->
-				<button class="sortinghat__click-button">
-					Find your house
-				</button>
 
 				<!-- Results field: shows the description related to the house you get -->
 				<div class="sortinghat__results-text-container">
