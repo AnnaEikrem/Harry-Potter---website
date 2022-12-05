@@ -4,7 +4,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 2rem
+	padding: 2rem;
 }
 
 .sortinghat__image {
@@ -14,7 +14,7 @@
 }
 
 .sortinghat__result {
-	width: 100%;
+	width: 60%;
 	padding: 3rem;
 
 	font-size: 1.5rem;
@@ -24,7 +24,7 @@
 }
 
 .sortinghat__results-text-container {
-	width: 70%;
+	width: 60%;
 	padding: 10vh;
 	text-align: center;
 	background: white;
@@ -77,13 +77,12 @@
 	}
 
 	.sortinghat__image {
-		width: 50%;
+		width: 100%;
 	}
 
 	.sortinghat__result {
-		width: 70%;
+		width: 60%;
 		padding: 5rem;
-	
 		font-size: 1.8rem;
 		font-family: var(--text-font);
 		text-align: center;
