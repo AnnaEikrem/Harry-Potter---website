@@ -4,9 +4,11 @@ export default function Header() {
 	const headerMenuButton = document.querySelector('.header__menu-button');
 	const headerNavigation = document.querySelector('.header__navigation');
 
+
+	// Event listener
 	headerMenuButton.addEventListener('click', handleHeaderMenuButtonClick);
 
-	/* Toggles visibility class on 'click' event */
+	/* Event handler: Toggles visibility class on 'click' event */
 	function handleHeaderMenuButtonClick(event) {
 		toggleNavigationVisibility();
 		renderHTML();

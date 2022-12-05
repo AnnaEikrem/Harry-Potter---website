@@ -3,10 +3,14 @@ export default function heroAutoplay() {
 	const heroCarousel = document.querySelector('.main__hero-images')
 	const heroImages = document.querySelectorAll('.main__hero-image');
 
+
+	// Event listener
 	if (heroCarousel) {
 		setInterval(autoplayCarousel, 5000);
 	}
 
+
+	// Event handler
 	function autoplayCarousel() {
 		increaseCarouselSlideIndex();
 		renderCarouselHTML();

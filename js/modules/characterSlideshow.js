@@ -8,7 +8,7 @@ export default function characterSlideshow() {
 	const buttonDots = document.querySelectorAll('.slideshow__button-dot');
 
 
-	/* Event listeners */
+	// Event listeners
 	if (slideshow) {
 		buttonPrevious.addEventListener('click', handleButtonPreviousClick);
 		buttonNext.addEventListener('click', handleButtonNextClick);
@@ -22,7 +22,7 @@ export default function characterSlideshow() {
 		});
 	}
 
-	/* event handlers */
+	// Event handlers
 	function handleButtonPreviousClick(event) {
 		decreaseCurrentSlideIndex();
 		renderHTML();

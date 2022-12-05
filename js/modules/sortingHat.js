@@ -15,10 +15,13 @@ export default function Sortinghat() {
 
 	let selectedHouse = null;
 
+	// Event listener
 	if (sortinghat) {
 		clickButton.addEventListener('click', handleClickButton);
 	}
 
+
+	// Event handler
 	function handleClickButton(event) {
 		getHouseResult();
 		playAudio();
