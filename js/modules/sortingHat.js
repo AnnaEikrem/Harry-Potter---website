@@ -1,7 +1,10 @@
 export default function Sortinghat() {
+	// Data 
+	let selectedHouse = null;
+
+	// Variables
 	const audio = new Audio;
 	audio.src = '/assets/audio/harryPotter-theme.mp3'
-
 	const sortinghat = document.querySelector('.sortinghat__random-picker');
 	const outputField = document.querySelector('.sortinghat__result');
 	const clickButton = document.querySelector('.sortinghat__click-button');
@@ -13,13 +16,11 @@ export default function Sortinghat() {
 		'Slytherin'
 	];
 
-	let selectedHouse = null;
 
 	// Event listener
 	if (sortinghat) {
 		clickButton.addEventListener('click', handleClickButton);
 	}
-
 
 	// Event handler
 	function handleClickButton(event) {
@@ -40,7 +41,7 @@ export default function Sortinghat() {
 		selectedHouse = randomlyChosenHouse;
 	}
 
-	// Adds audio
+	/** Function: starts audio file, when button is clicked */
 	function playAudio() {
 		audio.play();
 	}

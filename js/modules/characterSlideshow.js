@@ -1,6 +1,10 @@
 export default function characterSlideshow() {
+
+	// Data 
 	let currentSlideIndex = 0;
 
+
+	// Variables
 	const slideshow = document.querySelector('.main__slideshow');
 	const slideshowSlides = document.querySelectorAll('.slideshow__card');
 	const buttonPrevious = document.querySelector('.slideshow__button-previous');
@@ -68,7 +72,7 @@ export default function characterSlideshow() {
 		currentSlideIndex = index;
 	}
 
-	/* Updates HTML */
+	/** Updates HTML */
 	function renderHTML() {
 		for (const slide of slideshowSlides) {
 			slide.classList.remove('slideshow__card--active');
