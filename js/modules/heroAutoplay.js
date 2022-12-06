@@ -4,13 +4,14 @@ export default function heroAutoplay() {
 	const heroImages = document.querySelectorAll('.main__hero-image');
 
 
-	// Event listener
+	/** Function will run if: the parameter is present
+	 * @param {string} heroCarousel 
+	 */
 	if (heroCarousel) {
 		setInterval(autoplayCarousel, 5000);
 	}
 
-
-	// Event handler
+	/** Function will increase slide index of image array, and render the HTML*/
 	function autoplayCarousel() {
 		increaseCarouselSlideIndex();
 		renderCarouselHTML();
