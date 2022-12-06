@@ -41,7 +41,9 @@ export default function Sortinghat() {
 		selectedHouse = randomlyChosenHouse;
 	}
 
-	/** Function: starts audio file, when button is clicked */
+	/** Function: starts audio file, when button is clicked
+	 * @todo add button/option to turn off audio music
+	 */
 	function playAudio() {
 		audio.play();
 	}
